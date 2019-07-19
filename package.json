@@ -1,0 +1,24 @@
+{
+  "name": "learn_promise",
+  "version": "1.0.0",
+  "description": "Learn how promises works with little exos",
+  "scripts": {
+    "es6" : "node -r @std/esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoiris/learn_promise.git"
+  },
+  "keywords": [
+    "promise"
+  ],
+  "author": "Geoiris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoiris/learn_promise/issues"
+  },
+  "homepage": "https://github.com/geoiris/learn_promise#readme",
+  "dependencies": {
+    "@std/esm": "0.26.0"
+  }
+}
