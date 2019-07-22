@@ -7,6 +7,7 @@ const assert = require('./00_utils.js').assert;
 // Watch utils file to show the result of callPromise.
 
 //-------------- Promise ? Quesaco ? --------------------
+// We just call a promise without waiting response
 let promise = callPromise("1,5s", 1500);
 let expectedResult = "YOUR RESPONSE HERE...";
 try{
