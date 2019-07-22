@@ -1,14 +1,43 @@
 'use strict';
 
 const callPromise = require('./00_utils.js').callPromise;
+const assert = require('./00_utils.js').assert;
 
-callPromise("100mil", 100).then(resolve => console.log(resolve));
-callPromise("1s", 1000).then(resolve => console.log(resolve));
-callPromise("2s", 2000).then(resolve => console.log(resolve));
-callPromise("3s", 3000).then(resolve => console.log(resolve));
 
-// console result
-// > Promise 100mil resolved in 100
-// > Promise 1s resolved in 1000
-// > Promise 2s resolved in 2000
-// > Promise 3s resolved in 3000
+// Watch utils file to show the result of callPromise.
+
+//-------------- Promise ? Quesaco ? --------------------
+let promise = callPromise("1,5s", 1500);
+let expectedResult = "YOUR RESPONSE HERE...";
+try{
+    assert(promise.toString() == expectedResult, "wait promise");
+}catch(error){
+    console.log(error);
+}
+
+//-------------------------------------------------------
+//----------- Result for callPromise ? ------------------
+
+callPromise("100mil", 100).then(resolve => {
+    // resolve is the return of callPromise
+    let expectedResult = "YOUR RESPONSE HERE...";
+    assert(expectedResult == resolve, "call promise 100mil");
+});
+
+callPromise("1s", 1000).then(resolve => {
+    // resolve is the return of callPromise
+    let expectedResult = "YOUR RESPONSE HERE...";
+    assert(expectedResult == resolve, "call promise 1s");
+});
+
+callPromise("2s", 2000).then(resolve => {
+    // resolve is the return of callPromise
+    let expectedResult = "YOUR RESPONSE HERE...";
+    assert(expectedResult == resolve, "call promise 2s");
+});
+
+callPromise("3s", 3000).then(resolve => {
+    // resolve is the return of callPromise
+    let expectedResult = "YOUR RESPONSE HERE...";
+    assert(expectedResult == resolve, "call promise 3s");
+});

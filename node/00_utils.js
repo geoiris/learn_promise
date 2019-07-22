@@ -12,4 +12,12 @@ function callPromise(name, time, promiseInError) {
   });
 }
 
+ function assert(condition, exo) {
+  if (!condition) {
+      throw `Oh No :( - Exercice ${exo} is FAILED !`;
+  }
+  console.log(`Yeah - Exercice ${exo} is SUCCESS !`)
+}
+
 exports.callPromise = callPromise;
+exports.assert = assert;
