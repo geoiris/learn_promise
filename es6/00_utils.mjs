@@ -9,3 +9,10 @@ export function callPromise(name, time, promiseInError) {
     setTimeout(resolve, time, `Promise ${name} resolved in ${time}`);
   });
 }
+
+export function assert(condition, exo) {
+  if (!condition) {
+      throw `Oh No :( - Exercice ${exo} is FAILED !`;
+  }
+  console.log(`Yeah - Exercice ${exo} is SUCCESS !`)
+}
