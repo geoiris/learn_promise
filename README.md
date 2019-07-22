@@ -8,7 +8,8 @@ All exercises are write in full **ES6** and **NodeJs** style. The difference is 
 
 You need to install NodeJS v12 or latest to run the project.
 - Clone the repository on your machine.
-- Choose the branch with that you want learn (master for read the solution, exos for try by yourself)
+- Choose the branch with that you want learn (**master** for read the solution, **exos** for try by yourself)
+	- If you choose the **exos** branch, you just have to replace **"YOUR RESPONSE HERE..."** by your response... easy ?
 - Install the packages:
 	>npm install
 	
@@ -16,7 +17,7 @@ You need to install NodeJS v12 or latest to run the project.
 	>yarn
 - Launch the command to start the file that you want.
 
-You can use NPM or YARN to execute the commands.
+You can use **NPM** or **YARN** to execute the commands.
 
 ## run NodeJs files
 If you want use the NodeJs files, you have to launch this command:
